@@ -1,0 +1,302 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background-color: #FFFFFF;
+}
+header{
+    position: relative;
+}
+.main-container{
+    position: absolute;
+    z-index: 10;
+}
+/* Navbar */
+
+/* Upper nav */
+
+.upper-nav{
+    width: 100vw;
+    height: 40px;
+    padding: 10px 50px;
+    background: #0B0706;
+    display: flex;
+    justify-content: space-between;
+}
+.left-upper-nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.upper-nav-call{
+    display: flex;
+    gap: 10px;
+    color: #cccccc;
+    align-items: center;
+}
+.upper-nav-call p{
+    margin: 0;
+}
+.right-upper-nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.upper-nav-images{
+    height: 20px;
+    cursor: pointer;
+}
+
+/* Main Navbar */
+
+.main-nav{
+    width: 100wv;
+    height: 87px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+
+}
+#logo{
+    height: 75px;
+}
+.middle-main-nav{
+    display: none;
+}
+.middle-main-nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.middle-main-nav ul li{
+    color: #0B0706;
+    font-weight: 600;
+}
+.middle-main-nav ul li:hover{
+    color: #525560;
+    cursor: pointer;
+}
+.right-main-nav{
+    display: flex;
+    gap: 15px;
+    display: none;
+}
+#help-now{
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #E5E5E5;
+    background-color: #0B0706;
+}
+#apply-for-internship{
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #E5E5E5;
+    background-color: #0B0706;
+}
+#menu-icon{
+    height: 35px;
+}
+@media screen and (min-width:1060px) {
+    .middle-main-nav{
+        display: flex;
+    }
+    .right-main-nav{
+        display: flex;
+    }
+    .menu{
+        display: none;
+    }
+
+}
+
+/* Slider */
+.slider-title{
+    position: relative;
+    bottom: 2rem;
+    left: -3rem;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.slider-title h1{
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: start;
+}
+.slider-image{
+    filter: contrast(1.25);
+}
+.slider-btn{
+    display: flex;
+    gap: 20px;
+}
+.slider-button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #0B0706;
+    background-color: #E5E5E5;
+}
+.slider-button:hover{
+    background-color: #F2C94C;
+}
+@media screen and (min-width:1200px) {
+    .slider-title{
+        bottom: 10rem;
+        width: 1000px;
+    }
+    .slider-title h1{
+        font-size: 6rem;
+    }
+}
+
+/* About us Section */
+
+.Know-about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px ;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.about-us{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+.about-heading{
+    display: flex;
+    color: #1D2130;
+    align-items:center ;
+    font-weight: 600;
+    gap: 10px;
+    align-self: start;
+}
+.line{
+    height: 5px;
+    width: 80px;
+    background-color: #1D2130;
+}
+.left-about{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+}
+.left-about button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #0B0706;
+    background-color: #F2C94C;
+}
+.right-about img{
+    height: 300px;
+    border-radius: 1rem;
+}
+.supporter-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+.line1{
+    height: 5px;
+    width: 70vw;
+    background-color: #1D2130;
+}
+.supporter-images{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.supporter-images img{
+    width: 300px;
+}
+@media screen and (min-width:1100px) {
+    .about-us{
+        flex-direction: row;
+    }
+    .left-about{
+        text-align: start;
+        align-items: start;
+    }
+    .right-about img{
+        height: 600px;
+    }
+    .Know-about-us{
+        padding: 100px;
+    }
+    .supporter-images{
+        flex-direction: row;
+    }
+}
+
+/* Internship Section */
+
+.internship{
+    padding: 50px 50px;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.internship-div{
+    background-image: url(./images/christin-hume-hBuwVLcYTnA-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 90vw;
+    border-radius: 1rem;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+.internship-div button {
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #0B0706;
+    background-color: #E5E5E5;
+}
+@media screen and (max-width:530px) {
+    .internship-div h2{
+        font-size: 17px;
+    }
+    .internship-div p{
+        font-size: 12px;
+    }
+}
