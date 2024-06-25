@@ -481,3 +481,42 @@ header{
         gap: 10px;
     }
 }
+
+/* Meet Our Team */
+
+.team{
+    padding: 50px 100px;
+    text-align: center;
+}
+.team-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.team-image{
+    height: 300px;
+    border-radius: 1rem;
+}
+.team-card h3{
+    font-size: 18px;
+}
+.social-media-icon img{
+    height: 20px
+    
+}
+@media screen and (max-width:1200px) {
+    .team-card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:700px) {
+    .team-card-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team{
+        padding: 10px;
+    }
+}
