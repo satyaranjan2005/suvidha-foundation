@@ -300,3 +300,51 @@ header{
         font-size: 12px;
     }
 }
+
+/* What do we do */
+
+.what-do-we-do{
+    background-color: #FCEDC6;
+    padding: 50px 100px;
+}
+.what-do-we-do-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.what-do-we-do-title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 600;
+    align-self: start;
+}
+.what-do-we-do-title p{
+    margin: 0;
+}
+.what-do-we-do-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 40px;
+}
+.what-do-we-do-cards{
+    display: flex;
+    gap: 20px;
+}
+.what-do-we-do-cards img{
+    height: 80px;
+}
+@media screen and (max-width:1200px) {
+    .what-do-we-do-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:750px){
+    .what-do-we-do-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .what-do-we-do{
+        padding: 20px;
+    }
+}
