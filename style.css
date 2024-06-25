@@ -416,3 +416,68 @@ header{
         height: 500px;
     }
 }
+
+/* Suvidha Events */
+
+.event{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.event-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    align-self: start;
+}
+.event-title p{
+    margin: 0;
+}
+.event-container{
+    display: flex;
+    gap: 30px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.event-card{
+    background-color: #F2C94C;
+    border-radius: 1rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.event-card img{
+    width: 100%;
+    border-radius: 1rem;
+}
+.event h1{
+    text-align: center;
+}
+.event button{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: black;
+    background-color: #F2C94C;
+}
+@media screen and (max-width:1050px) {
+    .event-container{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:550px) {
+    .event{
+        padding: 5px;
+    }
+    .event-container{
+        padding: 10px;
+        gap: 10px;
+    }
+}
