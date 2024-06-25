@@ -348,3 +348,71 @@ header{
         padding: 20px;
     }
 }
+
+/* Our goals */
+
+.goals{
+    padding: 50px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-goals{
+    background-image: url(./images/christin-hume-hBuwVLcYTnA-unsplash.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    width: 90vw;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goal-card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+.goal-card{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: #cccccc;
+}
+.goal-card img{
+    height: 100px;
+}
+.goal-info h3{
+    font-size: 65px;
+}
+.goal-info p{
+    font-size: 20px;
+}
+@media screen and (max-width:1200px) {
+    .goal-card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:750px){
+    .goal-card-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .goals{
+        padding: 10px;
+    }
+    .goal-card img{
+        height: 50px;
+    }
+    .goal-info h3{
+        font-size: 40px;
+    }
+    .goal-info{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .our-goals{
+        height: 500px;
+    }
+}
