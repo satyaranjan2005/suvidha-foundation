@@ -383,7 +383,7 @@ header{
     display: flex;
     justify-content: center;
     gap: 10px;
-    color: #cccccc;
+    color: white;
 }
 .goal-card img{
     height: 100px;
@@ -538,5 +538,91 @@ header{
     }
     .team{
         padding: 10px;
+    }
+}
+
+/* Footer section */
+
+footer{
+    background-color: #0B0706;
+    color: #E5E5E5;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-links h1{
+    font-size: 30px;
+}
+.footer-address{
+    display: grid;
+    row-gap: 10px;
+}
+.footer-address h2{
+ font-size: 25px;
+}
+.footer-address h3{
+    font-size: 20px;
+    color: #F2C94C;
+}
+.footer-address p{
+    max-width: 600px;
+}
+.footer-socialMedia{
+    display: flex;
+    gap: 15px;
+}
+.footer-socialMedia img{
+    height: 25px;
+}
+.footer-certification ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-certification li{
+    list-style-type: square;
+}
+.footer-certification li a{
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 17px;
+}
+.footer-usefullLinks ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.footer-usefullLinks li{
+    list-style-type: square;
+}
+.footer-usefullLinks li a{
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 17px;
+}
+.footer-rights{
+    border-top: 2px solid #E5E5E5;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:1000px) {
+    .footer-links{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-rights{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media screen and (max-width:500px){
+    footer{
+        padding: 20px;
     }
 }
