@@ -294,10 +294,16 @@ header{
 }
 @media screen and (max-width:530px) {
     .internship-div h2{
-        font-size: 17px;
+        font-size: 20px;
     }
     .internship-div p{
-        font-size: 12px;
+        font-size: 15px;
+    }
+    .internship{
+        padding: 10px;
+    }
+    .internship-div{
+        height: 500px;
     }
 }
 
@@ -487,18 +493,30 @@ header{
 .team{
     padding: 50px 100px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
 .team-card-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
 }
 .team-image{
     height: 300px;
     border-radius: 1rem;
+    margin-bottom: 10px;
 }
-.team-card h3{
+.members-name{
+    display: flex;
+    flex-direction: column;
+}
+.members-name h3{
+    margin-bottom: 0px;
     font-size: 18px;
+}
+.members-name p{
+    margin-bottom: 0px;
 }
 .social-media-icon img{
     height: 20px
@@ -507,6 +525,7 @@ header{
 @media screen and (max-width:1200px) {
     .team-card-container{
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 20px;
     }
     .team{
         padding: 20px;
@@ -515,6 +534,7 @@ header{
 @media screen and (max-width:700px) {
     .team-card-container{
         grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
     }
     .team{
         padding: 10px;
