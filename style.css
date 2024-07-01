@@ -966,4 +966,72 @@ body {
 .contact-page-heading h1{
     font-size: 56px;
 }
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+.contact-info p{
+    font-size: 20px;
+}
+#msg-btn{
+    height: 40px;
+    width: 150px;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    color: #0B0706;
+    background-color: #F2C94C;
+}
+@media screen and (max-width:425px) {
+    .contact-info p{
+        font-size: 15px;
+    }
+}
 
+/* Help Page  */
+
+.account-div{
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.account-div h2{
+    font-size: 30px;
+}
+.accounts-details{
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+    background-color: #E5E5E5;
+    border-radius: 1rem;
+}
+.left-accounts-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left-accounts-details h3{
+    font-size: 25px;
+}
+.left-accounts-details p{
+    font-size: 18px;
+}
+.right-accounts-details h3{
+    font-size: 25px;
+}
+@media screen and (max-width:920px) {
+    .accounts-details{
+        flex-direction: column;
+    }
+    .account-div{
+        padding: 10px;
+    }
+
+}
