@@ -462,6 +462,9 @@ header{
     width: 100%;
     border-radius: 1rem;
 }
+.img-container{
+    width: 100%;
+}
 .event h1{
     text-align: center;
 }
@@ -641,9 +644,75 @@ footer{
     margin: 20px 0;
 }
   
-.testimonial1-card img{
+.testimonial1-card{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
 }
+.testimonial1-msg-box{
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 5px #FCEDC6;
+    position: relative;
+    padding: 20px;
+    height: 200px;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial1-msg-box::before{
+    content: "";
+    position: absolute;
+    bottom: -4rem;
+    left: 42%;
+    border: 30px solid white;
+    border-color: transparent;
+    border-top-color: #FCEDC6;
+
+}
+.testimonial1-msg-box p{
+    font-size: 15px;
+}
+.testimonial1-msg-box p::before{
+    content: "\f10d";
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    color: #F2C94C;
+    font-size: 40px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.testimonial1-msg-box p::after{
+    content: "\f10e";
+    position: absolute;
+    right: 1rem;
+    bottom: 0;
+    color: #F2C94C;
+    font-size: 40px;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+.img-info-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-info-div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.img-info-div img{
+    border-radius: 3rem;
+    border: 3px solid #FCEDC6;
+}
+.name-box{
+    font-weight: 600;
+}
+
 .testimonial1-btn{
     height: 40px;
     width: 150px;
