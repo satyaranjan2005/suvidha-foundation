@@ -22,8 +22,11 @@ Array.from(document.getElementsByClassName("instagram")).forEach(btn => {
 
 // Main nav buttons
 
-document.querySelector("#help-now").addEventListener("click",()=>{
-  location.href="./help.html";
+
+document.querySelectorAll(".help-now").forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    location.href="./help.html";
+  })
 })
 document.querySelectorAll(".apply").forEach(btn=>{
   btn.addEventListener("click",()=>{
@@ -55,9 +58,19 @@ document.querySelector(".testimonial1-btn").addEventListener("click",()=>{
   window.open("https://drive.google.com/drive/u/0/folders/1lCc5YL2t6eFN3nlk9mgseCXCg7kOdty8","_blank");
 })
 
-// contact btn
 
-// document.querySelector("#msg-btn").addEventListener("click",()=>{
-//     console.log("click")
-//     window.open("https://docs.google.com/forms/d/e/1FAIpQLSfAaaHU-k256CY6_83JPBOYeVFtKuKBvqMJb7oBIsDLKRmwNg/viewform","_blank")
+// Nav Menu 
+// let menuOpen = false;
+// let menu = document.querySelector(".menu-opts");
+// document.querySelector(".menu").addEventListener("click",()=>{
+//   if(menuOpen){
+//     menu.style.right = "-20rem";
+//     menuOpen = false;
+//     document.querySelector(".menu").innerHTML = `<img src="./images/main nav/menu.svg" alt="Menu" id="menu-icon" />`
+//   } else{
+//     menu.style.right = 0;
+//     menuOpen = true;
+//     document.querySelector(".menu").innerHTML = `<img src="./images/main nav/cross.svg" alt="Menu" id="menu-icon" />`
+//   }
+//   console.log(menuOpen)
 // })

@@ -14,6 +14,10 @@ header{
     /* position: absolute; */
     z-index: 10;
 }
+main{
+    position: relative;
+    overflow: hidden;
+}
 /* Navbar */
 
 /* Upper nav */
@@ -87,7 +91,7 @@ header{
     gap: 15px;
     display: none;
 }
-#help-now{
+.help-now{
     height: 40px;
     width: 100px;
     border: none;
@@ -96,7 +100,7 @@ header{
     color: #E5E5E5;
     background-color: #0B0706;
 }
-#apply-for-internship{
+.apply-for-internship{
     height: 40px;
     width: 180px;
     border: none;
@@ -120,6 +124,38 @@ header{
     }
 
 }
+
+
+.menu-opts{
+    background-color: #FFFFFF;
+    position: absolute;
+    z-index: 10;
+    right: -20rem;
+    top: 0.5rem;
+}
+.menu-opts ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 50px;
+}
+.menu-opts ul li{
+    list-style-type: none;
+}
+.menu-opts ul li a{
+    text-decoration: none;
+    color: #0B0706;
+    font-weight: 600;
+}
+@media screen and (min-width:1060px) {
+    .menu-opts{
+        right: -20rem;
+        display: none;
+    }
+
+}
+
 
 /* Slider */
 .slider-title{
