@@ -1140,3 +1140,23 @@ body {
     }
 
 }
+
+/* video  */
+
+.video-div{
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    left: 15vw;
+    top: 10vh;
+    border: 5px solid #F2C94C;
+}
+.video-div video{
+    height: 40vw;
+}
+#close-opt{
+    position: absolute;
+    height: 30px;
+    right: 10px;
+    top: 10px;
+}

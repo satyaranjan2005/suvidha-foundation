@@ -58,19 +58,26 @@ document.querySelector(".testimonial1-btn").addEventListener("click",()=>{
   window.open("https://drive.google.com/drive/u/0/folders/1lCc5YL2t6eFN3nlk9mgseCXCg7kOdty8","_blank");
 })
 
+function closeVideo(){
+  let closeBtn = document.querySelector("#close-opt")
+  closeBtn.addEventListener("click",()=>{
+    document.querySelector(".video-div").innerHTML = "";
+    document.querySelector("main").style.filter = "blur(0px)";
+    document.querySelector("header").style.filter = "blur(0px)";
+  })
+  
+}
 
-// Nav Menu 
-// let menuOpen = false;
-// let menu = document.querySelector(".menu-opts");
-// document.querySelector(".menu").addEventListener("click",()=>{
-//   if(menuOpen){
-//     menu.style.right = "-20rem";
-//     menuOpen = false;
-//     document.querySelector(".menu").innerHTML = `<img src="./images/main nav/menu.svg" alt="Menu" id="menu-icon" />`
-//   } else{
-//     menu.style.right = 0;
-//     menuOpen = true;
-//     document.querySelector(".menu").innerHTML = `<img src="./images/main nav/cross.svg" alt="Menu" id="menu-icon" />`
-//   }
-//   console.log(menuOpen)
-// })
+let watchBtn = document.querySelectorAll(".watch-video");
+watchBtn.forEach(btn=>{
+  btn.addEventListener("click",()=>{
+    document.querySelector(".video-div").innerHTML = `<video src="Suvidha_Foundation_Video.mp4" controls autoplay ></video>        <img src="./images/main nav/cross.svg" alt="" id="close-opt">`;
+    document.querySelector("main").style.filter = "blur(10px)";
+    document.querySelector("header").style.filter = "blur(10px)";
+    closeVideo()
+  })
+})
+
+closeBtn.addEventListener("click",()=>{
+  document.querySelector(".video-div").innerHTML = "";
+})
