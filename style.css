@@ -131,8 +131,14 @@ main{
     position: absolute;
     z-index: 10;
     right: -20rem;
-    top: 0.5rem;
+    top: 0rem;
+    height: 100vh;
+    filter: contrast(1);
+    transition-duration: 0.3s;
+    transition-property: right;
+    transition-timing-function: ease-in;
 }
+
 .menu-opts ul{
     display: flex;
     flex-direction: column;
@@ -1000,6 +1006,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    animation-name: exam;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
 }
 .gallery-card{
     padding: 10px;
@@ -1009,6 +1019,15 @@ body {
     gap: 10px;
     height: 400px;
     width: 440px;
+
+}
+@keyframes exam {
+    from{
+        flex-direction: column;
+    }
+    to{
+        flex-direction: row;
+    }
 }
 .gallery-card img{
     height: 300px;
@@ -1149,7 +1168,6 @@ body {
     z-index: 10;
     left: 15vw;
     top: 10vh;
-    border: 5px solid #F2C94C;
 }
 .video-div video{
     height: 40vw;
