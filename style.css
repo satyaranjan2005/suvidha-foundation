@@ -99,6 +99,12 @@ main{
     font-weight: 600;
     color: #E5E5E5;
     background-color: #0B0706;
+    transition-duration: 0.35s;
+    transition-property: all;
+}
+.help-now:hover{
+    background-color: #F2C94C;
+    color: #0B0706;
 }
 .apply-for-internship{
     height: 40px;
@@ -108,6 +114,12 @@ main{
     font-weight: 600;
     color: #E5E5E5;
     background-color: #0B0706;
+    transition-duration: 0.35s;
+    transition-property: all;
+}
+.apply-for-internship:hover{
+    background-color: #F2C94C;
+    color: #0B0706;
 }
 #menu-icon{
     height: 35px;
@@ -177,6 +189,7 @@ main{
     font-size: 4rem;
     font-weight: 600;
     text-align: start;
+    text-shadow: 8px 1px 5px #F2C94C;
 }
 .slider-image{
     filter: contrast(1.25);
@@ -193,6 +206,8 @@ main{
     font-weight: 600;
     color: #0B0706;
     background-color: #E5E5E5;
+    transition-duration: 0.35s;
+    transition-property: all;
 }
 .slider-button:hover{
     background-color: #F2C94C;
@@ -255,6 +270,12 @@ main{
     font-weight: 600;
     color: #0B0706;
     background-color: #F2C94C;
+    transition-duration: 0.35s;
+    transition-property: all;
+}
+.left-about button:hover{
+    color: white;
+    background-color: #0B0706;
 }
 .right-about img{
     height: 300px;
@@ -334,6 +355,12 @@ main{
     font-weight: 600;
     color: #0B0706;
     background-color: #E5E5E5;
+    transition-duration: 0.35s;
+    transition-property: all
+}
+.internship-div button:hover{
+    background-color: #F2C94C;
+    color: #0B0706;
 }
 @media screen and (max-width:530px) {
     .internship-div h2{
@@ -763,6 +790,12 @@ footer{
     font-weight: 600;
     color: white;
     background-color: #0B0706;
+    transition-duration: 0.35s;
+    transition-property: all
+}
+.testimonial1-btn:hover{
+    background-color: #F2C94C;
+    color: #0B0706;
 }
 
 /* testimonial 2 */
