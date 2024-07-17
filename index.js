@@ -72,7 +72,7 @@ function closeVideo(){
 let watchBtn = document.querySelectorAll(".watch-video");
 watchBtn.forEach(btn=>{
   btn.addEventListener("click",()=>{
-    document.querySelector(".video-div").innerHTML = `<video src="Suvidha_Foundation_Video.mp4" controls autoplay ></video>        <img src="./images/main nav/cross.svg" alt="" id="close-opt">`;
+    document.querySelector(".video-div").innerHTML = `<video src="./video/Suvidha_Foundation_Video.mp4" controls autoplay ></video>        <img src="./images/main nav/cross.svg" alt="" id="close-opt">`;
     document.querySelector("main").style.filter = "contrast(30%)";
     document.querySelector("header").style.filter = "contrast(30%)";
     document.querySelector(".video-div").style.border = "5px solid #F2C94C";
